@@ -1,0 +1,33 @@
+
+.contentContainer {
+    padding-top: 5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.allProducts {
+    width: 100%;
+    padding-top: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media (max-width: 1330px) {
+    .allProducts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1033px) {
+    .allProducts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 680px) {
+    .allProducts {
+        grid-template-columns: 1fr;
+    }
+}

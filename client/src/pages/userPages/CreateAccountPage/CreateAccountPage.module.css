@@ -1,0 +1,97 @@
+.createAccountContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createAccountForm {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+
+.createAccountHeading {
+    color: var(--heading-blue);
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: var(--text-font-family);
+    color: var(--heading-blue);
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+}
+
+
+.createAccountForm>p {
+    margin-bottom: 15px;
+    color: var(--heading-blue);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--text-font-family);
+}
+
+.createAccountForm>input {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: none;
+    padding-left: 0.7rem;
+}
+
+.createButton {
+    width: 100%;
+    background-color: var(--heading-blue);
+    border: none;
+    height: 3rem;
+    border-radius: none;
+    font-family: var(--text-font-family);
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.createAccountForm .alreadyAccount {
+    color: #6a6a6a;
+
+}
+
+
+@media (max-width: 1150px) {
+    .createAccountForm {
+        width: 30%;
+    }
+}
+
+@media (max-width: 950px) {
+    .createAccountForm {
+        width: 42%;
+    }
+}
+
+@media (max-width: 790px) {
+    .createAccountForm {
+        width: 53%;
+    }
+}
+
+@media (max-width: 628px) {
+    .createAccountForm {
+        width: 62%;
+    }
+}
+
+@media (max-width: 550px) {
+    .createAccountForm {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .createAccountForm {
+        width: 80%;
+    }
+}

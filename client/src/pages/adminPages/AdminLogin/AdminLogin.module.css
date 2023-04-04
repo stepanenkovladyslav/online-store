@@ -1,0 +1,128 @@
+.header {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 15px 15px -15px rgba(150, 150, 150, 0.24);
+    height: 3.5rem;
+}
+
+.headerTitle {
+    font-size: 40px;
+    color: red;
+}
+
+/* .loginForm {
+    margin-top: 2rem;
+    margin-inline: auto;
+} */
+
+.formContainer {
+    margin: 5rem auto;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.formHeader {
+    display: flex;
+    background-color: rgb(232, 231, 231);
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.5rem;
+    align-items: end;
+}
+
+.formHeader>span {
+    color: rgb(78, 78, 78);
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-inline: none;
+    padding: 0.5rem;
+}
+
+.formInput>p {
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.inputContainer {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.inputContainer>span {
+    display: inline-block;
+    background-color: rgb(232, 231, 231);
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    font-size: 17px;
+}
+
+.input {
+    height:2.2rem;
+    width: 100%;
+}
+
+.password {
+    border: none
+}
+
+.buttonContainer {
+    display: flex;
+    padding: 1rem;
+    justify-content: end;
+}
+
+.formButton {
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    background-color: #1e91cf;
+    border: 1px solid #166895;
+    border-radius: 3px;
+    color: white;
+}
+
+.formButton>span {
+    padding-right: 5px;
+}
+
+
+.error {
+    background-color: rgba(140, 140, 144, 0.19);
+    border: 0.5px solid black;
+}
+@media (max-width: 1150px) {
+    .formContainer {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+    .formButton>span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 418px) {
+    .buttonContainer {
+        justify-content: center;
+    }
+}

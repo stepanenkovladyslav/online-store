@@ -1,0 +1,51 @@
+.carouselContainer {
+    margin-top: 2rem;
+}
+
+.carouselWrapper {
+    display: flex;
+    align-items: center;
+}
+
+:root {
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: black;
+    --swiper-navigation-size: 30px;
+}
+
+
+.next {
+    background-color: red;
+}
+
+.headingContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carouselHeading {
+    color: var(--heading-blue);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+}
+
+.smallHeading {
+    margin-block: 1rem;
+    color: var(--heading-blue);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+    font-size: var(--small-heading);
+}
+
+.carouselButton {
+    width: fit-content;
+    margin: 0 auto;
+}
+

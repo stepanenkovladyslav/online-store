@@ -1,0 +1,26 @@
+.whiteButton {
+    padding: 14px 35px;
+    font-size: 12px;
+    border: none;
+    background-color: white;
+    color: var(--heading-blue);
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+}
+
+.blueButton {
+    padding: 14px 35px;
+    font-size: 12px;
+    border: none;
+    background-color: #1b133c;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+}

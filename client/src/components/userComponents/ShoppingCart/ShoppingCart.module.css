@@ -1,0 +1,105 @@
+.shoppingCartContainer {
+    display: none;
+
+}
+
+
+.shoppingCartContainer.active {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    animation: showCart 0.4s ease-out;
+}
+
+.shoppingCart {
+    width: 23%;
+    background-color: white;
+}
+
+
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.cartText {
+    color: var(--heading-blue);
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-family: var(--text-font-family);
+}
+
+.cartHeader button {
+    margin-right: 1rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.materialIcons {
+    color: var(--heading-blue);
+}
+
+.cartContent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartContent>.cartText {
+    font-size: 14px;
+}
+@keyframes showCart {
+    0% {
+        right: -23%;
+        opacity: 0%;
+
+    }
+    100% {
+        right: 0;
+        opacity: 100%;
+    }
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+    .shoppingCart {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .shoppingCart {
+        width: 40%;
+    }
+}
+
+@media (max-width: 730px) {
+    .shoppingCart {
+        width: 50%;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .shoppingCart {
+        width: 100%;
+    }
+    .cartContent>.cartText {
+        font-size: 12px;
+    }
+}

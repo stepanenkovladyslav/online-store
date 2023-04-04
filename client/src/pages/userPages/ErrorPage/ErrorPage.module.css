@@ -1,0 +1,48 @@
+.error {
+    height: 60vh;
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorTitle {
+    font-size: 150px;
+    margin-bottom: 1rem;
+}
+
+.errorDiscr {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.errorText {
+    text-align: center;
+}
+
+.linkHome {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+.error {
+    height: 100vh;
+    padding: 0;
+}
+
+    .errorTitle {
+        font-size: 120px;
+    }
+    .errorDiscr {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,51 @@
+
+.instagramPictures {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+.instagramBlock {
+    flex: 1 0 25%;
+    height: 100%;
+    
+}
+
+
+.instagramPic {
+   object-fit: contain;
+   height: 100%;
+   width: 100%;
+}
+
+.instaLink {
+    position: relative;
+    height: 100%;
+    display: block;
+}
+
+.instaLink::after {
+    position: absolute;
+    content: '';
+    background-color: black;
+    opacity: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease-out;
+}
+
+a:hover::after{
+    background-image: url("../../../img/user/icons8-instagram-24.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+    .instagramPictures {
+        display: none;
+    }
+}

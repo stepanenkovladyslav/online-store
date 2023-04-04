@@ -1,0 +1,77 @@
+.cabinetContainer {
+    padding-top: 10%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.logoutButton {
+    border: none;
+    text-transform: uppercase;
+    font-weight: var(--font-weight);
+    background-color: white;
+    letter-spacing: var(--letter-spacing);
+    color: #747373;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.logoutButton:hover {
+    color: var(--heading-blue);
+}
+
+.myAccount {
+    color: var(--heading-blue);
+    margin-top: 1rem;
+    font-size: var(--large-heading-font-size);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight);
+}
+
+.welcomeText {
+    color: var(--heading-blue);
+    margin-top: 1rem;
+}
+
+.orderInfo {
+    margin-top: 5rem;
+}
+
+.orderHeading {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight);
+    color: #747373;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.orderInfo>hr {
+    opacity: 0.4;
+}
+
+.noOrders {
+    margin-top: 1rem;
+    color: var(--heading-blue);
+    margin-bottom: 20%;
+}
+
+@media (max-width: 1032px) {
+    .cabinetContainer {
+        padding-top: 15%;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .cabinetContainer {
+        padding-top: 30%;
+    }
+}
+
+@media (max-width: 450px) {
+    .cabinetContainer {
+        padding-top: 40%;
+    }
+}

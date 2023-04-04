@@ -1,0 +1,106 @@
+.loginContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+}
+
+.formImg{
+    max-width: 100px;
+}
+
+
+.loginHeading {
+    margin-block: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--heading-blue);
+    letter-spacing: var(--letter-spacing);
+}
+
+.formContainer>p {
+    color: var(--heading-blue);
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: var(--text-font-family);
+}
+
+.formContainer>input {
+    margin-bottom: 15px;
+    width: 25%;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: none;
+    padding-left: 0.7rem;
+}
+
+
+.loginButton {
+    width: 25%;
+    height: 3rem;
+    background-color: var(--heading-blue);
+    border: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: var(--letter-spacing);
+    font-family: var(--text-font-family);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.formContainer>p.noAccount {
+    color: #6a6a6a;
+}
+
+.error {
+    background-color: rgba(140, 140, 144, 0.19);
+    border-top: 0.5px solid black;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1150px) {
+    .formContainer>input, .loginButton {
+        width: 30%;
+    }
+}
+
+@media (max-width: 950px) {
+    .formContainer>input, .loginButton {
+        width: 42%;
+    }
+}
+
+@media (max-width: 790px) {
+    .formContainer>input, .loginButton {
+        width: 53%;
+    }
+}
+
+@media (max-width: 628px) {
+    .formContainer>input, .loginButton {
+        width: 62%;
+    }
+}
+
+@media (max-width: 550px) {
+    .formContainer>input, .loginButton {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .formContainer>input, .loginButton {
+        width: 80%;
+    }
+}

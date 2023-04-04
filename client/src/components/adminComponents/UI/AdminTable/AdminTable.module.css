@@ -1,0 +1,65 @@
+.list {
+    min-width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: fit-content;
+}
+
+.list:last-child {
+    grid-column: 1/-1;
+}
+
+.listHeader {
+    display: flex;
+    background-color: rgba(0,0,0,.03);
+    justify-content: space-between;
+    height: 3em;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.listHeaderContent {
+    display: flex;
+}
+
+.listHeading {
+    font-weight: 400;
+}
+
+.addValue {
+    height: 2em;
+    width: 2em;
+    background-color: rgb(174, 174, 255);
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(147, 147, 251);
+    margin-right: 2em;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableHeaderRow {
+    display: table-row;
+    width: 100%;
+    font-weight: 700;
+}
+
+.tableBodyRow {
+    display: table-row;
+}
+
+.cell {
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    display: table-cell;
+    min-width: 80px;
+    text-align: center;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
+}

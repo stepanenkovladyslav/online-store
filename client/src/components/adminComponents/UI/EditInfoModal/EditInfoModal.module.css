@@ -1,0 +1,109 @@
+.backgroundDimmer {
+    min-height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.671);
+    z-index: 1;
+}
+
+.modal {
+    display: none;
+}
+
+.modalactive {
+    display: block;
+}
+
+
+.modalContainer {
+    padding: 2em;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50% -50%);
+    height: 40%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+/* .modalForm {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    height: 100%;
+    gap: 0.5em;
+    align-items: center;
+} */
+
+.modalForm {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+
+.modalForm > img {
+    height: 100%;
+    width: 45%;
+    margin-right: 5%;
+    object-fit: contain;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dataValue {
+    border: none;
+    width: 50%;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.dataValueactive {
+    pointer-events: all;
+    width: 50%;
+    font-size: 15px;
+}
+
+.dataValueactive:disabled, .dataValue:disabled {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submitContainer > button {
+    width: 8em;
+    height: 2em;
+}
+
+
+@media (max-width: 768px) {
+    .modalContainer {
+        height: auto;
+        width: 100%;
+        left: 0;
+        top: 25%;
+    }
+
+    .submitContainer>button {
+        margin-top: 1em;
+    }
+}

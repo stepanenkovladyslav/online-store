@@ -1,0 +1,33 @@
+
+//TYPE JSON
+[post] [send name] 1 - http://127.0.0.1:4000/api/type/ - create type
+[get]  [send null] 2 - http://127.0.0.1:4000/api/type/ - get all types
+
+
+//DEVICE FORM-DATA
+[post] [name, price, brandId, typeId, info, img] 1 - http://127.0.0.1:4000/api/device - create device
+[get] [brandId, typeId, limit, page] 2 - http://127.0.0.1:4000/api/device - get all devices
+[get] [id] 3 - http://127.0.0.1:4000/api/device/:id - get one device
+
+
+//BRAND JSON
+[post] [name] 1 - http://127.0.0.1:4000/api/brand - create new brand
+[get] [null] 2 - http://127.0.0.1:4000/api/brand - get all brands
+
+
+//USER JSON
+[post] [email, password, role] - http://127.0.0.1:4000/api/user/registration - register new user
+[post] [email, password] - http://127.0.0.1:4000/api/user/login - log in the user
+[get]  [user.id, user.email, user.role (created in the account)] - http://127.0.0.1:4000/api/user/auth - authenticate user
+[get] [null] - http://127.0.0.1:4000/api/user/getAll - get all users
+
+//INSTAGRAM IMAGES FORM-DATA
+[post] [link, img] - http://127.0.0.1:4000/api/instImg/ - add new instagram image with a link
+[get] [null] - http://127.0.0.1:4000/api/instImg/ - get all images with links
+
+//ANIME LOGOS FORM-DATA
+[post] [link, img] - http://127.0.0.1:4000/api/animeLogo/ - add new anime logo with a link[get] [null] - http://127.0.0.1:4000/api/animeLogo/ - get all images with links
+
+//CATEGORIES GRID IMAGES FORM-DATA
+[post] [imgLink, headingText, img] - http://127.0.0.1:4000/api/categoriesGrid/create - create an image with its heading and link
+[get] [null] - http://127.0.0.1:4000/api/categoriesGrid/ - get all images with headings and links

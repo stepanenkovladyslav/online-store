@@ -1,0 +1,55 @@
+.carousel__wrapper {
+    margin: 2rem;
+}
+
+.product__carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__smallheading {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+    margin: 1rem;
+    color: var(--heading-blue);
+}
+
+.carousel__largeheading {
+    color: var(--heading-blue);
+    font-size: var(--large-heading-font-size);
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+}
+
+.carousel__productlist {
+        display: flex;
+        align-items: center;
+        width: 100%;
+}
+
+.carousel__productlist>button {
+    margin-inline: 1rem;
+}
+
+.carousel {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(18, calc(25% - 0.7rem));
+    gap: 1rem; 
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel__button {
+    border: 1px solid black;
+}

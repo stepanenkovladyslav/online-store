@@ -1,0 +1,38 @@
+.categories__wrapper {
+    display: flex;
+    height: 100%;
+    margin: 2rem;
+}
+
+.categories__grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.grid__item {
+    display: flex;
+    flex: 1 0 45%;
+    min-width: 300px;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__heading {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 915px) {
+    .grid__heading {
+        font-size: 15px;
+    }
+}

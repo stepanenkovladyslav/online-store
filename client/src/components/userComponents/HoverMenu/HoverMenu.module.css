@@ -1,0 +1,43 @@
+.hoverMenuContainer {
+    position:absolute;
+    width: 100%;
+    min-height: 20vh;
+    left: 0;
+    top: 4em;
+    background-color: white;
+    display: flex;
+    border-block: 1px solid #ccc;
+    padding: 2rem 0rem;
+}
+
+.hoverMenu {
+    display: flex; 
+    width: 30%; 
+    margin: 0 auto;
+    justify-content: space-between;
+} 
+
+.column {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.columnSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnTitle {
+    letter-spacing: var(--letter-spacing);
+    color: #747373;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+}
+
+.column>li{
+    margin-block: 0.5rem;
+    color: var(--heading-blue);
+    font-family: var(--text-font-family);
+}

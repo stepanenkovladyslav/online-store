@@ -1,0 +1,39 @@
+.productCard {
+    margin-top: 2rem;
+    height: fit-content;
+    flex: 1 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.productCard:hover > .productPrice {
+    opacity: 1;
+    margin-top: 10px;
+}
+
+
+.productImg {
+    height: 400px;
+    max-width: 100%;
+}
+
+
+.productName {
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--heading-blue);
+    text-align: center;
+}
+
+.productPrice {
+    opacity: 0;
+    margin-top: 20px;
+    color: var(--price-color);
+    transition: all 0.3s ease-out;
+    cursor: default;
+}

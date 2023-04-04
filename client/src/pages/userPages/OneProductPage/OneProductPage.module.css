@@ -1,0 +1,33 @@
+.contentContainer {
+    padding-top: 4rem;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.productImages {
+    width: 50%;
+}
+
+.productImg {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .productInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productImages {
+        width: 100%;
+    }
+
+    .productInfo {
+        width: 100%;
+    }
+}

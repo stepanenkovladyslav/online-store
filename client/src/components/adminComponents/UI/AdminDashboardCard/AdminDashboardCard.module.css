@@ -1,0 +1,62 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 20%;
+}
+
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 0 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 0 60%;
+    }
+}
+
+.cardSummary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34a5c5;
+    color: white;
+    height: 1.7em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.change {
+    font-weight: 400;
+    padding-right: 0.5em;
+}
+
+.cardHeading {
+    font-weight: 400;
+    padding-left: 0.5em;
+}
+
+.cardValues {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 55px;
+    color: white;
+    height: 2em;
+    background-color: #107cb7;
+}
+
+.viewMore {
+    background-color: #34a5c5;
+    border: none;
+    color: white;
+    height: 1.7em;
+    padding-left: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

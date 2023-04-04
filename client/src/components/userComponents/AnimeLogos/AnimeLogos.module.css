@@ -1,0 +1,30 @@
+.animeLogos {
+    margin: 2rem auto;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    flex-basis: 0%;
+}
+
+.logo {
+    object-fit: contain;
+    max-width: 150px;
+    margin-inline: 0.5rem;
+}
+
+@media (max-width: 1425px) {
+    .animeLogos {
+        justify-content: center;
+    }
+    .logoContainer {
+    flex: 0 0 50%;
+    }
+}

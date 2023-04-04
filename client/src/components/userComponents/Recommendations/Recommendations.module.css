@@ -1,0 +1,37 @@
+.recommendationsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.recHeading {
+    color: var(--heading-blue);
+    font-weight: 300;
+    letter-spacing: var(--letter-spacing);
+    margin-bottom: 2rem;
+    font-size: var(--large-heading-font-size);
+}
+
+.recommendations {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+@media (max-width: 1150px) {
+    .recommendations {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .recHeading {
+        font-size: 15px;
+        text-align: center;
+    }
+}
