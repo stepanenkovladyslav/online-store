@@ -7,10 +7,6 @@ import { fetchAllCategoryImg } from "../../../store/actions/CategoriesGridImgAct
 
 const CategoriesGrid = () => {
 	const dispatch = useDispatch();
-	const backgroundImgStyle = {
-		background:
-			"linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../img/user/categories_grid_img1.webp')",
-	};
 
 	useEffect(() => {
 		dispatch(fetchAllCategoryImg());
@@ -46,42 +42,6 @@ const CategoriesGrid = () => {
 		<section className={style.categories__wrapper}>
 			<section className={style.categories__grid}>
 				{displayImages()}
-				{/* <div className={style.grid__item}>
-					<h3 className={style.grid__heading}>T-shirts</h3>
-					<Button
-						color={"white"}
-						text={"Shop All"}
-						link={"/collection/type/t-shirts"}
-					/>
-				</div>
-				<div className={style.grid__item}>
-					<h3 className={style.grid__heading}>
-						Loungewear and Sleepwear
-					</h3>
-					<Button
-						color={"white"}
-						text={"Shop All"}
-						link={"/collection/type/loungewear"}
-					/>
-				</div>
-				<div className={style.grid__item}>
-					<h3 className={style.grid__heading}>
-						Hoodies and Sweatshirts
-					</h3>
-					<Button
-						color={"white"}
-						text={"Shop All"}
-						link={"/collection/type/hoodies-and-fleece"}
-					/>
-				</div>
-				<div className={style.grid__item}>
-					<h3 className={style.grid__heading}>Accessories</h3>
-					<Button
-						color={"white"}
-						text={"Shop All"}
-						link={"/collection/type/accessories"}
-					/>
-				</div> */}
 			</section>
 		</section>
 	);

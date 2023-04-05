@@ -3,6 +3,7 @@ import style from "./ProductInfo.module.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addProductToCart } from "../../../store/actions/ShoppingCartActions";
+import ProductSizeChoice from "../ProductSizeChoice/ProductSizeChoice";
 
 const ProductInfo = (props) => {
 	const product = props.product[0];
@@ -111,6 +112,11 @@ const ProductInfo = (props) => {
 			);
 		});
 	};
+
+	const selectSize = (size) => {
+		setSelectedSize(size);
+	};
+
 	return (
 		<div className={style.infoContainer}>
 			<div className={style.infoHeader}>
@@ -147,25 +153,8 @@ const ProductInfo = (props) => {
 				<h3 className={style.productName}>{product.name}</h3>
 				<h3 className={style.productPrice}>${product.price}</h3>
 			</div>
-			{product.type !== "Accessories" ? (
-				<div className={style.selectSizeContainer}>
-					<select
-						className={style.selectSize}
-						onChange={(e) => setSelectedSize(e.target.value)}
-						defaultValue="1"
-					>
-						<option disabled value="1">
-							Select Size
-						</option>
-						<option value="S">S</option>
-						<option value="M">M</option>
-						<option value="L">L</option>
-						<option value="XL">XL</option>
-					</select>
-				</div>
-			) : (
-				<></>
-			)}
+
+			<ProductSizeChoice selectSize={selectSize} product={product} />
 			<button
 				className={buttonClasses}
 				onClick={() => dispatch(addProductToCart(chosenProduct))}

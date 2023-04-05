@@ -17,4 +17,3 @@ const PageHeader = () => {
 };
 
 export default PageHeader;
-// match(/[a-z]/g)

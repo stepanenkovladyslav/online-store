@@ -8,6 +8,8 @@ import {
 } from "../../store/actions/ModalActions";
 import HoverMenu from "./HoverMenu/HoverMenu";
 import SideBarMenu from "./SideBarMenu/SideBarMenu";
+import UserDesktopMenu from "./UserDesktopMenu";
+import UserHeaderIcons from "./UserHeaderIcons";
 
 const UserHeader = (props) => {
 	const [loggedIn, setLoggedIn] = useState(false);
@@ -64,7 +66,7 @@ const UserHeader = (props) => {
 							</button>
 						) : (
 							<NavLink to="/">
-								<h1 className="header__heading">ukiyoe</h1>
+								<h2 className="header__heading">atsuko</h2>
 							</NavLink>
 						)}
 					</div>
@@ -74,51 +76,11 @@ const UserHeader = (props) => {
 							<SideBarMenu deactivate={openSideBar} />
 						</div>
 					) : (
-						<nav className="menu">
-							<div className="sidebarExit">
-								<button>X</button>
-							</div>
-							<NavLink
-								className="menu__item"
-								to="/collection/type/new"
-								onMouseOver={(e) => deActivateHoverMenu()}
-							>
-								New
-							</NavLink>
-							<NavLink
-								to="/collection"
-								className="menu__item"
-								onMouseOver={(e) => deActivateHoverMenu()}
-							>
-								Shop All
-							</NavLink>
-							<NavLink
-								to="/collection"
-								className="menu__item"
-								data-value="Shop By Series"
-								onMouseOver={(e) => activateHoverMenu(e)}
-								onTouchEnd={(e) => touchActivateHoverMenu(e)}
-							>
-								Shop By Series
-							</NavLink>
-							<NavLink
-								onMouseOver={(e) => activateHoverMenu(e)}
-								onTouchEnd={(e) => touchActivateHoverMenu(e)}
-								to="/collection/type/hoodies-and-fleece"
-								className="menu__item"
-								data-value="Apparel"
-							>
-								Apparel
-							</NavLink>
-							<NavLink
-								to="/collection/type/accessories"
-								className="menu__item"
-								data-value="Accessories"
-								onMouseOver={(e) => deActivateHoverMenu()}
-							>
-								Accessories
-							</NavLink>
-						</nav>
+						<UserDesktopMenu
+							activateHoverMenu={activateHoverMenu}
+							deActivateHoverMenu={deActivateHoverMenu}
+							touchActivateHoverMenu={touchActivateHoverMenu}
+						/>
 					)}
 
 					{hoverMenuActive ? (
@@ -131,36 +93,11 @@ const UserHeader = (props) => {
 						<></>
 					)}
 				</div>
-				<div className="icons">
-					{loggedIn ? (
-						<NavLink to="/portal" className="icons__item">
-							<span className="material-icons menu-icon">
-								account_circle
-							</span>
-						</NavLink>
-					) : (
-						<NavLink to="/login" className="icons__item">
-							<span className="material-icons menu-icon">
-								account_circle
-							</span>
-						</NavLink>
-					)}
-					<button
-						href=""
-						className="icons__item"
-						onClick={() => props.activateSearch()}
-					>
-						<span className="material-icons menu-icon">search</span>
-					</button>
-					<button
-						className="icons__item"
-						onClick={() => props.activateCart()}
-					>
-						<span className="material-icons menu-icon">
-							shopping_bag
-						</span>
-					</button>
-				</div>
+				<UserHeaderIcons
+					activateSearch={props.activateSearch}
+					activateCart={props.activateCart}
+					loggedIn={loggedIn}
+				/>
 			</div>
 		</header>
 	);

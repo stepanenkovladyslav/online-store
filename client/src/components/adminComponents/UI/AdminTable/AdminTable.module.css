@@ -40,26 +40,9 @@
     border-collapse: collapse;
 }
 
-.tableHeaderRow {
-    display: table-row;
-    width: 100%;
-    font-weight: 700;
-}
-
-.tableBodyRow {
-    display: table-row;
-}
-
-.cell {
-    border: 1px solid rgba(0, 0, 0, 0.336);
-    display: table-cell;
-    min-width: 80px;
-    text-align: center;
-}
-
 .error {
     display: flex;
     justify-content: center;
     font-size: 30px;
     color: red;
-}
+} 

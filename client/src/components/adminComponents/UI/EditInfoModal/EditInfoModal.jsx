@@ -178,9 +178,6 @@ const EditInfoModal = (props) => {
 						onClick={(e) => props.offswitch({})}
 					></div>
 					<div className={style.modalContainer}>
-						{/* {submitError === true ? (
-							<h4 className={style.error}>{error.message}</h4>
-						) : ( */}
 						<form
 							className={style.modalForm}
 							key={displayData.length}

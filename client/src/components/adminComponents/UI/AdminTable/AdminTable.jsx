@@ -5,13 +5,9 @@ import AddValueModal from "../AddValueModal/AddValueModal";
 import { useLocation } from "react-router-dom";
 import EditInfoModal from "../EditInfoModal/EditInfoModal";
 import { useFormatting } from "../../../../hooks/useFormatting";
-import {
-	activateModal,
-	deActivateModal,
-} from "../../../../store/actions/ModalActions";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-import { fetchOneDevice } from "../../../../store/actions/DevicesActions";
+import TableHeaderRow from "../TableHeaderRow/TableHeaderRow";
+import TableBodyRow from "../TableBodyRow/TableBodyRow";
 
 const AdminTable = (props) => {
 	const [activeAddModal, setActiveAddModal] = useState(false);
@@ -25,14 +21,11 @@ const AdminTable = (props) => {
 
 	const [activeEditModal, setActiveEditModal] = useState(false);
 	const [editInfo, setEditInfo] = useState();
-	// const isActive = useSelector((store) => store.ModalReducer.isActive);
 	const activateEditModal = (item) => {
 		activeEditModal === true
 			? setActiveEditModal(false)
 			: setActiveEditModal(true);
 		setEditInfo(item);
-		// ? dispatch(deActivateModal())
-		// : dispatch(activateModal());
 	};
 	const data = useFormatting(props.data);
 	const location = useLocation();
@@ -63,58 +56,12 @@ const AdminTable = (props) => {
 				</div>
 				<div className={style.listContent}>
 					<table className={style.table}>
-						<thead>
-							<tr className={style.tableHeaderRow}>
-								{props.error.status ? (
-									<td className={style.error}>
-										{props.error.message}
-									</td>
-								) : (
-									Object.keys(data[0]).map((key, idx) => {
-										return (
-											<td
-												className={style.cell}
-												key={idx}
-											>
-												{key}
-											</td>
-										);
-									})
-								)}
-							</tr>
-						</thead>
-						<tbody>
-							{data.map((item, idx) => {
-								if (idx < props.limit) {
-									return (
-										<tr
-											className={style.tableBodyRow}
-											key={idx}
-										>
-											{Object.values(item).map(
-												(value, idx) => {
-													return (
-														<td
-															className={
-																style.cell
-															}
-															key={idx}
-															onClick={() =>
-																activateEditModal(
-																	item
-																)
-															}
-														>
-															{value}
-														</td>
-													);
-												}
-											)}
-										</tr>
-									);
-								}
-							})}
-						</tbody>
+						<TableHeaderRow error={props.error} data={data} />
+						<TableBodyRow
+							data={data}
+							limit={props.limit}
+							activateEditModal={activateEditModal}
+						/>
 					</table>
 				</div>
 				<AddValueModal

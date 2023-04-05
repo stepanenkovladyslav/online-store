@@ -100,13 +100,18 @@ const AddValueModal = (props) => {
 
 	function createModal(locationPage) {
 		switch (locationPage) {
-			case "types": {
+			case "types":
+			case "brands": {
 				return (
 					<form
 						className={style.modalForm}
 						onSubmit={(e) => submitForm(e)}
 					>
-						<h2>Add Product Type</h2>
+						<h2>
+							Add{" "}
+							{locationPage[0].toUpperCase() +
+								locationPage.slice(0, -1).slice(1)}
+						</h2>
 						<input
 							className={style.nameInput}
 							type="text"
@@ -115,37 +120,21 @@ const AddValueModal = (props) => {
 							placeholder="Type name"
 							required
 						></input>
-						<button
-							className={style.submit}
-							onClick={() => dispatch(createType(name))}
-						>
-							Submit
-						</button>
-					</form>
-				);
-			}
-
-			case "brands": {
-				return (
-					<form
-						className={style.modalForm}
-						onSubmit={(e) => submitForm(e, error)}
-					>
-						<h2>Add Brand</h2>
-						<input
-							className={style.nameInput}
-							type="text"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
-							placeholder="Type name"
-							required
-						></input>
-						<button
-							className={style.submit}
-							onClick={() => dispatch(createBrand(name))}
-						>
-							Submit
-						</button>
+						{locationPage == "brand" ? (
+							<button
+								className={style.submit}
+								onClick={() => dispatch(createBrand(name))}
+							>
+								Submit
+							</button>
+						) : (
+							<button
+								className={style.submit}
+								onClick={() => dispatch(createType(name))}
+							>
+								Submit
+							</button>
+						)}
 					</form>
 				);
 			}

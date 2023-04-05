@@ -10,12 +10,6 @@ import { useSelector } from "react-redux";
 const AdminLayout = () => {
 	const [activeProfile, setActiveProfile] = useState(false);
 
-	// const disableProfileMenu = (e) => {
-	// 	if (e.target.tagName !== "BUTTON" && activeProfile === true) {
-	// 		setActiveProfile(false);
-	// 	}
-	// };
-
 	const [activeNotifications, setActiveNotifications] = useState(false);
 
 	const disableDropdowns = (e) => {

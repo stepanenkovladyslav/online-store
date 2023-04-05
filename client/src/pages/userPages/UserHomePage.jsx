@@ -1,7 +1,6 @@
 import React from "react";
 import CategoriesGrid from "../../components/userComponents/CategoriesGrid/CategoriesGrid";
 import Hero from "../../components/userComponents/Hero/Hero";
-import ProductCarousel from "../../components/userComponents/ProductCarousel/ProductCarousel";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllDevices } from "../../store/actions/DevicesActions";
