@@ -3,3 +3,5 @@
 .DS_Store
 /server/.env
 /server/static
+/client/package-lock.json
+/server/package-lock.json
