@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f06aae2.css",
+    "main.js": "/static/js/main.f1e0a066.js",
+    "static/media/Atsuko_ChainsawmanRMSG_HeroBanner_FEB2023_1200x.webp": "/static/media/Atsuko_ChainsawmanRMSG_HeroBanner_FEB2023_1200x.8ab56af85f1f704b1fd2.webp",
+    "index.html": "/index.html",
+    "static/media/home-img.svg": "/static/media/home-img.f968d93cb406d81ac0a4e371ac99e4e1.svg",
+    "main.5f06aae2.css.map": "/static/css/main.5f06aae2.css.map",
+    "main.f1e0a066.js.map": "/static/js/main.f1e0a066.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f06aae2.css",
+    "static/js/main.f1e0a066.js"
+  ]
+}
