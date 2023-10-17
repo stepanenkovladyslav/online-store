@@ -7,7 +7,6 @@ import { createType } from "../../../../store/actions/TypeActions";
 import { createBrand } from "../../../../store/actions/BrandActions";
 import { createDevice } from "../../../../store/actions/DevicesActions";
 import { createUser } from "../../../../store/actions/UserActions";
-import { modalWork } from "../../../../store/actions/ModalActions";
 
 const AddValueModal = (props) => {
 	const location = useLocation();

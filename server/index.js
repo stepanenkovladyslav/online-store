@@ -16,7 +16,6 @@ app.use(express.json());
 // serving built front end code
 app.use(express.static(path.resolve(__dirname, "public")));
 // serving images from db
-// app.use(express.static(path.resolve(__dirname, "static")));
 app.use(fileUpload({}));
 app.use("/api", router);
 app.get('/', (req, res) => {

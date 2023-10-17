@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./AdminTable.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import AddValueModal from "../AddValueModal/AddValueModal";
 import { useLocation } from "react-router-dom";
 import EditInfoModal from "../EditInfoModal/EditInfoModal";
 import { useFormatting } from "../../../../hooks/useFormatting";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import TableHeaderRow from "../TableHeaderRow/TableHeaderRow";
 import TableBodyRow from "../TableBodyRow/TableBodyRow";
 

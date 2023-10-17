@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import logouticon from "../../img/admin/logout-icon.png";
-import bellicon from "../../img/admin/notifications-icon.png";
+import bellicon from "../..//img/admin/notifications-icon.png";
 import profileimg from "../../img/admin/profile-img.png";
 import { logoutUser } from "../../store/actions/UserActions";
 

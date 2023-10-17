@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import homeicon from "../../img/admin/home-img.svg";
 
 const AdminNavigation = (props) => {
 	const visibleMenuClasses = props.menuActive
