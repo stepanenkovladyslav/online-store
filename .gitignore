@@ -5,4 +5,5 @@
 /server/static
 /client/package-lock.json
 /client/src/img/
+/server/img
 /server/package-lock.json

@@ -14,7 +14,6 @@ const InstagramPictures = (props) => {
 
 	const displayImg = () => {
 		return instaImg.map((img, idx) => {
-      console.log(img)
 			return (
 				<div className={style.instagramBlock} key={idx}>
 					<a
