@@ -9,13 +9,13 @@
 
 ## Description
 
-This project is a visually inspired clone of the popular anime merchandise store, Atsuko.com. It serves as a feature-rich, interactive web application designed to showcase a wide range of anime-related products. Key highlights include:
+This project is a visually inspired clone of the popular anime merchandise store, Atsuko.com. It serves as a feature-rich and interactive web application designed to showcase a wide range of anime-related products. Key highlights include:
 
 - Extensive Product Catalog: Encompassing multiple product categories and brands, the store offers a diverse array of anime merchandise. Each product is carefully categorized, not only by brand but also by its specific anime association, ensuring fans can easily find merchandise related to their favorite shows.
 
 - User-Friendly Features: Users can experience the convenience of a personalized shopping journey with features like user account creation, a customizable user cabinet, and a shopping cart to collate their desired items. However, it's important to note that actual purchasing functionality is not implemented, making this a safe, browse-only experience.
 
-- Admin Panel Access: A unique aspect of this project is its admin panel. Anyone can log into the admin panel(those who have admin rights) and create new categories, products, brands, and even manage user accounts. This feature is designed to demonstrate backend functionality and database management capabilities, providing a hands-on experience in e-commerce administration.
+- Admin Panel Access: A unique aspect of this project is its admin panel.The admin panel is accessible to users with admin rights, allowing them to create new categories, products, brands, and manage user accounts. This feature is designed to demonstrate backend functionality and database management capabilities, providing a hands-on experience in e-commerce administration.
 
 The project is a visual clone of Atsuko.com, but not a functional one. It provides a comprehensive platform for anime enthusiasts to explore and for developers or recruiters to witness a blend of front-end aesthetics with robust back-end functionalities.
 
@@ -25,7 +25,7 @@ To get a closer look at the functionality and user interface of my Anime Merchan
 
 [Watch the Video Demonstration](https://youtu.be/cV_W1nzBBlk)
 
-## Feautres and Functionality
+## Features and Functionality
 
 - **Product Browsing, Filtering and Search**: The site features a browsing experience, where products are categorized by various anime titles and categories. Product filtering based on prices and recency is also implemented. Search through products is available site-wide.
 
@@ -37,6 +37,6 @@ To get a closer look at the functionality and user interface of my Anime Merchan
 
 - **Efficient Data Handling and Page Reloads**: Changes made via the admin panel are effectively implemented upon page reload. This illustrates my capability in managing data flow and synchronization between the server and the frontend, ensuring that updates are accurately reflected after a user-initiated refresh.
 
-- **Mobile browsing**: Created a mobile version for this website for the seemless mobile user experience.
+- **Mobile browsing**:Developed a mobile-responsive version of the website to ensure a seamless browsing experience on various devices.
 
 Each feature was carefully crafted to not only replicate key aspects of an e-commerce platform but also to demonstrate my technical proficiency and thoughtful approach to web development.
