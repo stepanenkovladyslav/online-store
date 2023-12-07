@@ -41,11 +41,11 @@ class UserController {
     const { email, password } = req.body;
     const user = await User.findOne({ where: { email } });
     if (!user) {
-      return next(ApiError(404, "User is not found"));
+      return next(new ApiError(404, "User is not found"));
     }
     let comparePassword = bcrypt.compare(password, user.password);
     if (!comparePassword) {
-      return next(ApiError(401, "Wrong password"));
+      return next(new ApiError(401, "Wrong password"));
     }
     const token = generateJwt(user.id, user.email, user.role);
     return res.json({ token });

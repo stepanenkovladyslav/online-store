@@ -30,13 +30,22 @@ const ProductPage = (props) => {
 	const displayDevice = useFormatting([oneDevice]);
 
 	const displayPhotos = (photos) => {
-		return photos.map((photo, idx) => (
-			<img
-				className={style.productImg}
-				src={`http://127.0.0.1:4000/${photo}`}
-				key={idx}
-			></img>
-		));
+            if(photos.length > 0) {
+                return photos.map((photo, idx) => (
+                    <img
+                        className={style.productImg}
+                        src={`http://127.0.0.1:4000/${photo}`}
+                        key={idx}
+                    ></img>
+                ));
+            }
+            console.log(oneDevice.img)
+            return (
+                    <img
+                        className={style.productImg}
+                        src={`http://127.0.0.1:4000/${oneDevice.img}`}
+                        key={oneDevice.id}
+                    ></img>)
 	};
 
 	return oneDevice.id ? (

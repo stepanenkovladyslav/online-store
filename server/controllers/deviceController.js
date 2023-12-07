@@ -11,10 +11,10 @@ class DeviceController {
 			let fileName = uuid.v4() + ".jpg";
 			pictures.length > 1
 				? pictures[0].mv(
-						path.resolve(__dirname, "..", "static", fileName)
+						path.resolve(__dirname, "..", "img", fileName)
 				  )
 				: pictures.mv(
-						path.resolve(__dirname, "..", "static", fileName)
+						path.resolve(__dirname, "..", "img", fileName)
 				  );
 
 			const device = await Device.create({
@@ -38,7 +38,7 @@ class DeviceController {
 				pictures.forEach((picture) => {
 					let fileName = uuid.v4() + ".jpg";
 					picture.mv(
-						path.resolve(__dirname, "..", "static", fileName)
+						path.resolve(__dirname, "..", "img", fileName)
 					);
 					DevicePhotos.create({
 						img: fileName,

@@ -31,7 +31,7 @@ const AdminLogin = () => {
 	return (
 		<div>
 			<header className={style.header}>
-				<h1 className={style.headerTitle}>ukiyoe</h1>
+				<h1 className={style.headerTitle}>atsuko</h1>
 			</header>
 			<form className={style.loginForm}>
 				<div className={style.formContainer}>

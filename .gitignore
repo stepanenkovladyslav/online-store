@@ -2,8 +2,9 @@
 /server/node_modules/
 .DS_Store
 /server/.env
-/server/static
+/server/public
 /client/package-lock.json
 /client/src/img/
 /server/img
 /server/package-lock.json
+
